@@ -1,0 +1,82 @@
+.update {
+  display: flex;
+  justify-content: center;
+  background-image: url("https://img.freepik.com/free-photo/top-view-office-stationery-with-pen-notebook_23-2148524768.jpg?w=1380&t=st=1693303727~exp=1693304327~hmac=4029236309bfe655879150fe0af873543322e9dce426e2890356b0173a0df0b5");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    width: 70%;
+    height: 1200px;
+    border-radius: 10px;
+    background-color: lightgray;
+    padding: 10px;
+
+    @media screen and (max-width: 600px) {
+      margin-top: 100px;
+      width: 80%;
+      height: 1200px;
+      padding: 10px;
+    }
+
+    .h1 {
+      color: black;
+      font-size: 35px;
+      font-family: "Dancing Script", cursive;
+
+      @media screen and (max-width: 600px) {
+        font-size: 25px;
+      }
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      height: 100px;
+      background-color: transparent;
+      height: fit-content;
+      width: 70%;
+      padding: 5px;
+
+      .label {
+        font-size: 20px;
+        font-family: "Dancing Script", cursive;
+      }
+      .warning {
+        color: red;
+      }
+      .input {
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        background-color: transparent;
+        width: 100%;
+        padding: 5px;
+      }
+      .button {
+        align-self: center;
+        border: none;
+        border-radius: 10px;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .writeImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+      }
+    }
+  }
+}

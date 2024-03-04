@@ -1,0 +1,68 @@
+.lists{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    gap: 30px;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+
+    .topcontent{
+        display: flex;
+        margin: 10px 60px 0px 10px;
+        flex-direction: column;
+
+        .h1{
+            font-size: small;
+            font-family: "Kode Mono", monospace;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .input{
+                display: flex;
+                margin: 5px;
+                gap: 10px;
+                .input1{
+                    border: none;
+                    background: transparent;
+                    border-bottom: 2px solid black;
+                }
+                .lable{
+                    font-size: small;
+                    font-family: "Kode Mono", monospace;
+                }
+            }
+            .button{
+                margin: 3px;
+                align-self: center;
+                border: none;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 255, 0.703);
+                font-family: "Kode Mono", monospace;
+                color: white;
+                padding: 5px;
+                cursor: pointer;
+                @media screen and (max-width: 600px) {
+                    padding: 4px;
+                    font-size: small;
+                  }
+            }
+        }
+        
+    }
+    .table{
+        @media screen and (max-width: 600px) {
+            background-color: black;
+          }
+        .th{
+            @media screen and (max-width: 600px) {
+                padding: 2px;
+                font-size: 5px;
+              }
+        }
+    }
+}
